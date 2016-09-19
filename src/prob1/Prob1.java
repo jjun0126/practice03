@@ -14,9 +14,20 @@ public class Prob1 {
 	
 	public static char[] reverse(String str){
 		/* 구현코드 */
+		char[] charArray = str.toCharArray();
+		
+		int length = charArray.length / 2;
+		for( int i = 0; i < length; i++ ) {
+			char c = charArray[ i ];
+			charArray[ i ] = charArray[ charArray.length - 1 - i ];
+			charArray[ charArray.length - 1 - i ] = c;
+		}
+		
+		return charArray;
 	}
 	
 	public static void printCharArray(char[] array){
 		/* 구현코드 */
+		System.out.println( array );
 	}
 }
