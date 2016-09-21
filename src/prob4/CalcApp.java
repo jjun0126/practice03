@@ -56,8 +56,8 @@ public class CalcApp {
 					break;
 				}
 			}
+			
+			scanner.close();
 		}
-		
-		scanner.close();
 	}
 }
